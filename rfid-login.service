@@ -1,0 +1,11 @@
+[Unit]
+Description=RFID Login thing...
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=
+ExecStart=/usr/bin/python3 <rfid-login.py-path> &
+
+[Install]
+WantedBy=multi-user.target
